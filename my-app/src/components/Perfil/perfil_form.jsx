@@ -2,6 +2,7 @@ import React from 'react';
 //import axios from 'axios'
 import '../../styles/perfil.css'
 import authservice from '../../services/authservice'
+import {Link} from 'react-router-dom'
 
 class Perfil_Form extends React.Component {
     constructor(props){
@@ -35,14 +36,13 @@ class Perfil_Form extends React.Component {
                 <input class="perfilmenu-btn" type="checkbox" id="perfilmenu-btn" />
                 <label class="perfilmenu-icon" for="perfilmenu-btn"><span class="perfilnavicon"></span></label>
                 <ul class="dropdown-content">
-                    <li>Agendar Coleta</li>
-                    <li>Editar Agendamento</li>
-                    <li>Deletar Agendamento</li>
-                    <li>Listar Agendamentos</li>
-                    <li>Cadastrar Associado</li>
-                    <li>Alterar Associado</li>
-                    <li>Deletar Associado</li>
-                    <li>Visualizar Associado</li>
+                    <li><Link to='/agendamento'>Agendar Coleta</Link></li>
+                    <li><Link to='/'>Deletar Agendamento</Link></li>
+                    <li><Link to='/'>Listar Agendamentos</Link></li>
+                    <li><Link to='/'>Cadastrar Associado</Link></li>
+                    <li><Link to='/'>Alterar Associado</Link></li>
+                    <li><Link to='/'>Deletar Associado</Link></li>
+                    <li><Link to='/visualizarassociado'>Visualizar Associado</Link></li>
                 </ul>
                 <div class="div">
                     <h1>admin</h1>

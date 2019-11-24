@@ -1,11 +1,16 @@
 
-export const authHeader = () =>{
-
-    let user = JSON.parse(localStorage.getItem('user'));
-    if(user && user.token) {
-        return { 'Authorization':'Bearer'+user.token};
+const authHeader = () =>{
+    //localStorage.getItem('userToken')
+    let user = localStorage.getItem('userToken');
+    if(user) {
+        let bearer = {
+            token: 'Bearer '+user
+        }
+        return bearer;
     }
     else{
         return { };
     }
 }
+
+export default authHeader;

@@ -8,6 +8,7 @@
     "jwt-decode": "^2.2.0",
     "react": "^16.11.0",
     "react-alert": "^6.0.0",
+    "react-checkbox-group": "^5.0.2",
     "react-dom": "^16.11.0",
     "react-google-recaptcha": "^2.0.1",
     "react-popup": "^0.10.0",
