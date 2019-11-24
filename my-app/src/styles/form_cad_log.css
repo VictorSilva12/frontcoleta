@@ -1,0 +1,113 @@
+.form_rl {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 420px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: justify;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.input_rl {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.button_rl {
+    background: #f2f2f2;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding:10px;
+    width: 100%;
+    margin-left: 1%;
+}
+.form_rl button:hover,.form_rl button:active,.form_rl button:focus {
+    background: #f2f2f294;
+}
+.label_rl {
+    text-align: justify;
+    cursor:pointer
+}
+.rl_container {
+    padding-top: 100px;
+}
+.rl_group{ 
+    margin: 20px; 
+    position:relative; 
+}
+.captcha {
+    max-width: 300px;
+    padding: 20px;
+}
+  
+#g-recaptcha {
+    margin: auto;
+    width: 25%;
+    padding: 10px;
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+}
+@media ( max-width: 48em) {
+    .form_rl {
+        margin:0 auto;
+        width: 284px;
+    }
+    .input_rl {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    .button_rl {
+        background: #f2f2f2;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        border: 0;
+        text-transform: uppercase;
+        outline: 0;
+        padding:10px;
+        width: 100%;
+        margin-left: 1%;
+    }
+    .form_rl button:hover,.form_rl button:active,.form_rl button:focus {
+        background: #f2f2f294;
+    }
+    .label_rl {
+        text-align: left;
+        cursor:pointer
+    }
+    .rl_container {
+        padding-top: 70px;
+        padding-right: 5%;
+    }
+    .rl_group{ 
+        margin: 20px; 
+        position:relative; 
+    }
+    .captcha {
+        max-width: 300px;
+        padding: 20px;
+    }
+      
+    #g-recaptcha {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        transform-origin: left top;
+        -webkit-transform-origin: left top;
+    }
+}

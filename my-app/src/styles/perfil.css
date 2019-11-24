@@ -1,0 +1,130 @@
+.perfil_container{
+    padding-top: 70px;
+    
+}
+.perfil_box{
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 1250px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: justify;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+  .perfil_box .perfilmenu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  .perfil_box .perfilmenu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+   
+  .perfil_box .perfilmenu-icon .perfilnavicon {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+   
+  .perfil_box .perfilmenu-icon .perfilnavicon:before,
+  .perfil_box .perfilmenu-icon .perfilnavicon:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+   
+  .perfil_box .perfilmenu-icon .perfilnavicon:before {
+    top: 5px;
+  }
+   
+  .perfil_box .perfilmenu-icon .perfilnavicon:after {
+    top: -5px;
+  }
+  
+  .perfil_box .perfilmenu-btn {
+    display: none;
+  }
+  
+  .perfil_box .dropdown-content {
+     list-style-type: none;
+     display: none;
+     position: absolute;
+     background-color: #f8f8f8;
+     min-width: 160px;
+     top:58px;
+     right:20px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     padding: 12px 16px;
+     z-index: 4;
+  }
+  
+  .perfil_box .dropdown-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    width: 256px;
+  }
+  
+  .perfil_box .dropdown-content li {
+    width: 300px;
+  } 
+  
+  .perfil_box  .dropdown-content li a {
+    display: block;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 26.4px;
+    color: #222222;
+    border: 0px solid white;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .perfil_box .dropdown-content li:hover{
+    background-color: #f2f2f2;
+  }
+  
+  .perfil_box .dropdown-content li a:hover {
+    color: #000000;
+  }
+  
+  .perfil_box .perfilmenu-btn:checked ~ .dropdown-content {
+    display: block;
+  }
+   
+  .perfil_box .perfilmenu-btn:checked ~ .perfilmenu-icon .navicon {
+    background: transparent;
+  }
+   
+  .perfil_box .perfilmenu-btn:checked ~ .perfilmenu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+   
+  .perfil_box .perfilmenu-btn:checked ~ .perfilmenu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+   
+  .perfil_box .perfilmenu-btn:checked ~ .perfilmenu-icon:not(.steps) .perfilnavicon:before,
+  .perfil_box .perfilmenu-btn:checked ~ .perfilmenu-icon:not(.steps) .perfilnavicon:after {
+    top: 0;
+  }

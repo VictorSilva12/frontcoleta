@@ -1,0 +1,26 @@
+.footer {
+    font-size: 20px;
+    text-align: center;
+    max-width: 834px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+    background: #fff;
+    margin: auto;
+}
+@media ( max-width: 48em) {
+    .footer{
+        font-size: 20px;
+        text-align: center;
+        max-width: 768px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1px;
+        background: #fff;
+        margin: auto;
+    }
+}
