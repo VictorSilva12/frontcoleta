@@ -1,0 +1,35 @@
+
+.visu_container{
+    padding-top: 70px;
+    
+}
+.user{
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    padding-top: 10px;
+}
+.visu_box{
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 1250px;
+    margin: 0 auto 100px;
+    padding-top: 70px;
+    padding: 45px;
+    text-align: justify;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.visu_buttonExcluir{
+    background: #f2f2f2;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding-right:10px;
+    margin-left: 1%;
+}

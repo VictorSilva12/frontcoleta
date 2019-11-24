@@ -58,7 +58,7 @@ class Cadastro_Form extends React.Component {
             <div class='rl_container'>
                 <form onSubmit={this.HandleSubmit} class='form_rl'>
                     <div class='rl_group'>
-                        <label class="label_rl">Nome</label>
+                        <label class='label_rl'>Nome</label>
                         <input
                             name="nome"
                             type="Text"

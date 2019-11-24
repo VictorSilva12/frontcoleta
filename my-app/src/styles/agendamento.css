@@ -1,14 +1,26 @@
-.form_rl {
+.form_ag {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
-    max-width: 420px;
+    max-width: 780px;
     margin: 0 auto 100px;
     padding: 45px;
     text-align: justify;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.input_rl {
+.descricao{
+    resize: none;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.input_ag {
     resize: none;
     font-family: "Roboto", sans-serif;
     outline: 0;
@@ -21,7 +33,7 @@
     font-size: 14px;
 }
 
-.button_rl {
+.button_ag {
     background: #f2f2f2;
     transition: all 0.3 ease;
     cursor: pointer;
@@ -32,38 +44,27 @@
     width: 100%;
     margin-left: 1%;
 }
-.form_rl button:hover,.form_rl button:active,.form_rl button:focus {
+.form_ag button:hover,.form_ag button:active,.form_ag button:focus {
     background: #f2f2f294;
 }
-.label_rl {
-    text-align: justify;
+.label_ag {
+    max-width: 60px;
     cursor:pointer
 }
-.rl_container {
+.ag_container {
     padding-top: 100px;
 }
-.rl_group{ 
+.ag_group{ 
     margin: 20px; 
     position:relative; 
 }
-.captcha {
-    max-width: 300px;
-    padding: 20px;
-}
-  
-#g-recaptcha {
-    margin: auto;
-    width: 25%;
-    padding: 10px;
-    transform-origin: left top;
-    -webkit-transform-origin: left top;
-}
+
 @media ( max-width: 48em) {
-    .form_rl {
+    .form_ag {
         margin:0 auto;
         width: 284px;
     }
-    .input_rl {
+    .input_ag {
         font-family: "Roboto", sans-serif;
         outline: 0;
         background: #f2f2f2;
@@ -74,7 +75,7 @@
         box-sizing: border-box;
         font-size: 14px;
     }
-    .button_rl {
+    .button_ag {
         background: #f2f2f2;
         transition: all 0.3 ease;
         cursor: pointer;
@@ -85,31 +86,19 @@
         width: 100%;
         margin-left: 1%;
     }
-    .form_rl button:hover,.form_rl button:active,.form_rl button:focus {
+    .form_ag button:hover,.form_ag button:active,.form_ag button:focus {
         background: #f2f2f294;
     }
-    .label_rl {
+    .label_ag {
         text-align: left;
         cursor:pointer
     }
-    .rl_container {
+    .ag_container {
         padding-top: 70px;
         padding-right: 5%;
     }
-    .rl_group{ 
+    .ag_group{ 
         margin: 20px; 
         position:relative; 
-    }
-    .captcha {
-        max-width: 300px;
-        padding: 20px;
-    }
-      
-    #g-recaptcha {
-        margin: auto;
-        width: 60%;
-        padding: 10px;
-        transform-origin: left top;
-        -webkit-transform-origin: left top;
     }
 }
