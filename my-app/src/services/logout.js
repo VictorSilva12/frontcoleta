@@ -5,6 +5,7 @@ const auth = new Auth();
 class Logout extends React.Component{
     componentDidMount(){
         auth.logout()
+        window.location.reload(false);
         this.props.history.push('/login')
     }
     render(){

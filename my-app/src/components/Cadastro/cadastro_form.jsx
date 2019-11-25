@@ -49,8 +49,10 @@ class Cadastro_Form extends React.Component {
        }
        )
           .then((response) => this.props.history.push("/"))
-          .catch(err => console.log(err.response))
-        
+          .catch(err =>{
+            alert(JSON.stringify(err.response.data))
+          }
+        )
     };
 
     render(){
