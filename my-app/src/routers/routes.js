@@ -13,6 +13,8 @@ import Logout from '../services/logout'
 import Perfil from '../components/Perfil/perfil'
 import Agendamento from '../components/Agendamento/agendamento'
 import VisualizarAssociado from '../components/VisualizarAssociado/visualizarassociado'
+import CadastroAssociado from '../components/CasdastroAssociado/cadastroAssociado'
+import ListarAgendamento from '../components/ListarAgendamento/listarAgendamento'
 const auth = new authservice();
 
 const routes = () => (
@@ -25,6 +27,8 @@ const routes = () => (
                 <PrivateRoute path='/logout' component={Logout}/>
                 <PrivateRoute path='/agendamento' component={Agendamento}/>
                 <PrivateRoute path='/visualizarassociado' component={VisualizarAssociado}/>
+                <PrivateRoute path='/cadastroAssociado' component={CadastroAssociado}/>
+                <PrivateRoute path='/listarAgendamento' component={ListarAgendamento}/>
             </Switch>
         </Layout>
     </BrowserRouter>

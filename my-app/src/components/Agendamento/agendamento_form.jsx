@@ -97,7 +97,7 @@ class Agendamento_Form extends React.Component {
             <div class='ag_container'>
                 <form onSubmit={this.HandleSubmit} class='form_ag'>
                     <div class='ag_group'>
-                        <label class='label_ag'>Informe o Id do Usuario que voce deseja associar o Agendamento</label>
+                        <p>Informe o Id do Usuario que voce deseja associar o Agendamento</p>
                         <input 
                             type="text"
                             value={this.state.userId}
@@ -107,7 +107,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Rua</label>
+                        <p>Rua</p>
                         <input 
                             type="text"
                             value={this.state.enderecoRua}
@@ -117,7 +117,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Numero</label>
+                        <p >Numero</p>
                         <input 
                             type="number"
                             value={this.state.enderecoNum}
@@ -127,7 +127,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Complemento</label>
+                        <p >Complemento</p>
                         <input 
                             type="text"
                             value={this.state.enderecoComplemento}
@@ -136,7 +136,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Bairro</label>
+                        <p >Bairro</p>
                         <input 
                             type="text"
                             value={this.state.enderecoBairro}
@@ -146,7 +146,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Cidade</label>
+                        <p >Cidade</p>
                         <input 
                             type="text"
                             value={this.state.enderecoCidade}
@@ -156,7 +156,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Estado</label>
+                        <p >Estado</p>
                         <input 
                             type="text"
                             value={this.state.enderecoEstado}
@@ -166,7 +166,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Data</label>
+                        <p >Data</p>
                         <input 
                             type="date"
                             value={this.state.agendadoPara}
@@ -176,7 +176,7 @@ class Agendamento_Form extends React.Component {
                         />
                     </div>
                     <div class='ag_group'>
-                        <label class='label_ag'>Descrição</label>
+                        <p >Descrição</p>
                         <textarea
                             type="text"
                             value={this.state.descricao}
