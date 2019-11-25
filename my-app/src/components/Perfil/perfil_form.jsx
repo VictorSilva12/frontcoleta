@@ -37,17 +37,19 @@ class Perfil_Form extends React.Component {
                 <label class="perfilmenu-icon" for="perfilmenu-btn"><span class="perfilnavicon"></span></label>
                 <ul class="dropdown-content">
                     <li><Link to='/agendamento'>Agendar Coleta</Link></li>
-                    <li><Link to='/'>Deletar Agendamento</Link></li>
-                    <li><Link to='/'>Listar Agendamentos</Link></li>
-                    <li><Link to='/'>Cadastrar Associado</Link></li>
+                    <li><Link to='/listarAgendamento'>Gerenciar Agendamento</Link></li>
+                    <li><Link to='/cadastroAssociado'>Cadastrar Associado</Link></li>
                     <li><Link to='/'>Alterar Associado</Link></li>
                     <li><Link to='/'>Deletar Associado</Link></li>
                     <li><Link to='/visualizarassociado'>Visualizar Associado</Link></li>
                 </ul>
-                <div class="div">
-                    <h1>admin</h1>
-                    <span>/</span>
-                    <h1>{this.user_info().user.nome}</h1>
+                <div>
+                    <div>
+                        <h2>{this.user_info().user.nome}</h2>
+                        <span>Criado em: {this.user_info().user.criadoEm}</span>
+                    </div>
+                    <p><strong>E-Mail: </strong>{this.user_info().user.email}</p>
+                    <p><strong>Cpf: </strong>{this.user_info().user.cpf}</p>  
                 </div>
             </div>
         )

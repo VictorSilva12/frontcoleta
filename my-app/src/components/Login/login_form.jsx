@@ -45,10 +45,10 @@ class Cadastro_Form extends React.Component {
             this.autentica.login(this.state.email, this.state.senha)
             .then(res =>{
             //this.props.history.push(`/perfil/${res}`)
+            window.location.reload(false);
             this.props.history.push(`/`)
             })
-            .catch(res=>{
-                alert(JSON.stringify(res))
+            .catch(err=>{
             })
         }
         else{

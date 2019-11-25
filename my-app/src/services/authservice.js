@@ -18,10 +18,9 @@ class AuthService {
             localStorage.setItem('userToken', response.data.data.token)
             return response.data
         })
-        .catch((response)=> {
-            alert(response.data.erros)
-            console.log(response.data.erros)
-            return response.data.erros
+        .catch((err)=> {
+            alert(JSON.stringify(err.response.data))
+            return err
         }) 
     }
 
@@ -72,10 +71,9 @@ class AuthService {
         // Using jwt-decode npm package to decode the token
         return decode(this.getToken());
     }
-
+    /*
     _checkStatus(response) {
-        // raises an error in case response status is not a success
-        if (response.status >= 200 && response.status < 300) { // Success status lies between 200 to 300
+        if (response.status >= 200 && response.status < 300) { 
             return response
         } else {
             var error = new Error(response.statusText)
@@ -83,6 +81,7 @@ class AuthService {
             throw error
         }
     }
+    */
 }
 
 export default AuthService;
